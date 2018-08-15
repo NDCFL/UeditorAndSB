@@ -6,7 +6,7 @@ public class StringToBCDUtil {
      * @参数: 参数
      */
     public static void main(String[] args) {
-        byte[] b = strToBcd("11",0);
+        byte[] b = strToBcd("0",0);
         System.out.println(bcdToStr(b));
     }
 

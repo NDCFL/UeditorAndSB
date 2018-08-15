@@ -1,5 +1,7 @@
 package com.cflwork.common;
 
+import com.cflwork.vo.ItemVo;
+
 import java.util.Map;
 
 public class RSATester {
@@ -20,8 +22,23 @@ public class RSATester {
     }
 
     public static void main(String[] args) throws Exception {
-        test();
-        testSign();
+//        test();
+//        testSign();
+        ItemVo itemVo = new ItemVo();
+        itemVo.setId(123456l);
+        itemVo.setIdCard(360730199712200617l);
+        itemVo.setType(1);
+        itemVo.setMoney(20);
+        itemVo.setTitle("充值消费");
+        itemVo.setStatus((byte)0);
+        itemVo.setCreateTime("20180815");
+//        System.out.println("0612345618360730199712200617000000490220002320805c20540c28040c36153000000480820180815");
+        System.out.println("030208052080520540205402804028040".length());
+//        位图:System.out.println(BitMapUtil.bitMap("0100101001000000010000000010000000000001000000000000000000000000"));
+//        数据:0612345618360730199712200617000000490220002320805c20540c28040c36153000000480820180815
+        //4a40402001000000
+        //06123456
+
     }
 
     static void test() throws Exception {
